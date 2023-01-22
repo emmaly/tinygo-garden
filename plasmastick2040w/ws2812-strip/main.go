@@ -24,6 +24,6 @@ func main() {
 			stripLeds[i] = color.RGBA{R: red, G: green, B: blue}
 		}
 		strip.WriteColors(stripLeds[:])
-		time.Sleep(time.Duration(rand.Uint32() & 500) * time.Millisecond)
+		time.Sleep(time.Duration(rand.Uint32()&500) * time.Millisecond)
 	}
 }
